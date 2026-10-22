@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lynails - Servicios y Reservas</title>
+    <link rel="stylesheet" href="css/formulario.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">
+            <img src="img/newlogolynail.png" alt="Lynails Logo">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="formulario.html" class="active">Reservas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="reserva" class="seccion-reserva">
+            <div class="cuadro-reserva"> 
+                <h2>Hacer una reserva</h2>
+                <p>Nuestros clientes son importantes para nosotros, por eso nos capacitamos continuamente para asegurarnos de que todos los tratamientos sean del más alto nivel y que cada cliente reciba la mejor atención.</p> 
+
+                <form id="formReserva" action="#">
+                    <div class="campo"> 
+                        <label for="nombre">Nombre y Apellido</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="servicio">Servicio a elegir</label>
+                        <select id="servicio" name="servicio" required>
+                            <option value="">--Seleccionar un servicio--</option>
+                            <option value="Capping">Capping</option>
+                            <option value="Esmaltado Semipermanente">Esmaltado Semipermanente</option>
+                            <option value="Uñas Esculpidas">Uñas Esculpidas</option>
+                            <option value="Depilacion integral">Depilación integral</option>
+                        </select>
+                    </div>
+
+                    <div class="campo">
+                        <label for="mensaje">Mensaje o preferencia de fecha</label>
+                        <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+                    </div>
+
+                    <button type="submit" id="btnEnviar">Enviar Reserva</button>
+
+                    <p id="mensajeExito" class="mensaje-oculto">
+                        ¡Reserva enviada con éxito! ¡Nos contactaremos pronto!
+                    </p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 Lynails - Todos los derechos reservados.</p>
+        <div class="redes">
+            <a href="#">Instagram</a> | <a href="#">WhatsApp</a>
+        </div>
+    </footer>
+
+    <script src=" js/formulario.js"></script>
+</body>
+</html>
