@@ -1,0 +1,126 @@
+.seccion-unas-moderna {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: inherit; 
+}
+
+.titulo-seccion-unas {
+  text-align: center;
+  color: #5e3267;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+
+.contenedor-tarjetas-unas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+
+.tarjeta-una {
+  background-color: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(91, 52, 109, 0.06);
+  border: 1px solid #f2daf0;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.tarjeta-una:hover {
+  transform: translateY(-5px); 
+}
+
+
+.contenedor-foto-una {
+  width: 100%;
+  height: 250px; 
+  overflow: hidden;
+  background-color: #f7f3f0;
+}
+
+
+.foto-una-individual {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+
+
+
+#foto-capping {
+  object-position: center 30%; 
+}
+
+
+#foto-semi {
+  object-position: center center;
+}
+
+
+#foto-esculpidas {
+  object-position: center 65%;
+}
+
+
+.contenido-tarjeta-una {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.contenido-tarjeta-una h3 {
+  color: #5e3267;
+  font-size: 1.4rem;
+  margin: 0 0 12px 0;
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.descripcion-una {
+  font-size: 0.95rem;
+  color: #666666;
+  line-height: 1.5;
+  margin: 0 0 16px 0;
+  flex-grow: 1; 
+}
+
+.divisor-tarjeta {
+  height: 1px;
+  background-color: #f2daf0;
+  margin-bottom: 16px;
+}
+
+.beneficio-una {
+  font-size: 0.9rem;
+  color: #a93b90;
+  line-height: 1.4;
+  margin: 0;
+}
+
+
+@media (max-width: 900px) {
+  .contenedor-tarjetas-unas {
+    grid-template-columns: 1fr; 
+    gap: 30px;
+  }
+  
+  .contenedor-foto-una {
+    height: 220px; 
+  }
+}
+
+
+
+
+
+
+
